@@ -1,10 +1,10 @@
-# Nexus A7 projects
+# Nexys A7 projects
 
 Projects written with free software Vivado using VHDL (no Verilog).
 
 ## Board details
 
-Projects for the Nexus A7 board from Digilent.
+Projects for the Nexys A7 board from Digilent.
 
 Part: AMD/Xilinx XC7A100T-1CSG324C
 

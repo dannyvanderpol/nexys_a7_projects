@@ -5,8 +5,8 @@
 ## Note: As the Nexys 4 DDR was rebranded to the Nexys A7 with no substantial changes, this XDC file will also work for the Nexys 4 DDR.
 
 ## Speedup the flash loading
-set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
-set_property BITSTREAM.GENERAL.COMPRESS    true [current_design]
+set_property BITSTREAM.CONFIG.SPI_BUSWIDTH  4       [current_design]
+set_property BITSTREAM.GENERAL.COMPRESS     true    [current_design]
 
 ## Clock signal
 #set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { CLK100MHZ }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz

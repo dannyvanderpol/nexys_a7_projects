@@ -1,1 +1,0 @@
-# nexus_a7_projects

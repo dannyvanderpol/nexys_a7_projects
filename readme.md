@@ -1,5 +1,9 @@
 # Nexus A7 projects
 
+Projects written with free software Vivado using VHDL (no Verilog).
+
+## Board details
+
 Projects for the Nexus A7 board from Digilent.
 
 Part: AMD/Xilinx XC7A100T-1CSG324C
@@ -31,8 +35,43 @@ Part: AMD/Xilinx XC7A100T-1CSG324C
   * 4 Pmod connectors
   * Pmod for XADC signals
 
+## Software
+
+Download and install Xilinx/AMD Vivado ML Standard (standard edition is free, but requires and account).
+
+## Project setup
+
+### Add the board in Vivado:
+
+* Menu: Tools -> Vivado store
+* Tab: Boards
+* Click the refresh button to update the boards
+* Install: Digilent Nexys A7-100T
+
+### Create project:
+
+* Menu: File -> Project -> New
+* Enter project name and location
+* Select RTL project
+* Select board: Nexys A7-100T
+* Finish
+* Open project settings
+  * General:
+    * Target language: VHDL
+  * Bitstream
+    * Enable -bin_file
+* Open the hardware manager
+  * Connect to the hardware
+  * Add the flash program memory:
+    * Click 'Add Configuration Memory Device' in the project tree
+    * Select: s25fl128sxxxxxx0-spi-x1_x2_x4
+    * Click OK
+* Add the project files to the Vivado project
+
 ## Links
 
 Product page: https://digilent.com/reference/programmable-logic/nexys-a7/start
 
 Reference manual: https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual
+
+AMD/Xilinx Vivado: https://www.xilinx.com/developer/products/vivado.html

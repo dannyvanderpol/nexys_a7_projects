@@ -11,13 +11,12 @@ Describe behavior (functionality).
 
 ```
 entity <entity-name> is
-begin
     port(
         input_1: in  std_logic;
         input_2: in  std_logic;
         output : out std_logic
     );
-end <entity-name>
+end <entity-name>;
 
 architecture <arch-name> of <entity-name> is
 begin

@@ -11,7 +11,7 @@ Part: AMD/Xilinx XC7A100T-1CSG324C
 * FPGA Features
   * Internal clock speeds exceeding 450MHz
   * On-chip analog-to-digital converter (XADC)
-  * Programmable over JTAG and Flas
+  * Programmable over JTAG and Flash
 * System Features
   * USB-JTAG programming circuitry
   * 16 MB QSPI Flash 

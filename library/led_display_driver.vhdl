@@ -5,11 +5,11 @@
 -- DIGITS: array of 8 digit values ( "xxxxx", "xxxxx", ... ). First element is the right digit.
 -- Digit value: 5 bits:
 --   Bit 0...3: value for LED display 0...9, a...f
---   Bit 4    : display on (1) or off (0)
+--   Bit 4    : digit on (1) or off (0)
 -- Show 9:  digit value: 11001
 -- Show c:  digit value: 11100
 -- Digit off: 0xxxx
--- POINTS: 8 digits determining if the decimal point of the respective display is on off.
+-- POINTS: 8 bits determining if the decimal point of the respective display is on off.
 ----------------------------------------------------------------------------------------------------
 
 library IEEE;

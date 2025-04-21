@@ -128,6 +128,16 @@ architecture test_bench of led_display_driver_tb is
             for i in 0 to 7 loop
                 CLK_TB <= not CLK_TB;
                 wait for CLK_PERIOD / 2;
+                -- Check if the correct annode is low
+                for j in 0 to 7 loop
+                    if j = i then
+                        assert AN_TB(j) = '0'
+                            report "Annode " & integer'image(i) & " is not low" severity failure;
+                    else
+                        assert AN_TB(j) = '1'
+                            report "Annode " & integer'image(i) & " is not low" severity failure;
+                    end if;
+                end loop;
                 -- Check output
                 SEGMENTS := CA_TB & CB_TB & CC_TB & CD_TB & CE_TB & CF_TB & CG_TB;
                 assert check_output(DIGITS_TB(i), SEGMENTS) = 1

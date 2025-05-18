@@ -10,7 +10,12 @@ add the lines:
 ---
 #!/bin/sh
 FILES=$(git diff --cached --name-only --diff-filter=ACMR)
-python tools/remove_trailing_spaces.py $FILES > .git/hooks/pre-commit.log 2>&1
+
+if [ -n "$FILES" ]; then
+    python tools/remove_trailing_spaces.py $FILES > .git/hooks/pre-commit.log 2>&1
+    git add $FILES >> .git/hooks/pre-commit.log 2>&1
+fi
+
 if [ $? -ne 0 ]; then
     echo "Pre-commit check failed!"
     exit 1

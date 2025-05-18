@@ -23,7 +23,7 @@ architecture behavior of clock_generator_tb is
 
     signal      CLK_TB     : std_logic := '0';
     signal      CLK_LDD_TB : std_logic;
-    
+
     begin
         DUT : clock_generator port map(
             CLK_SYS => CLK_TB,

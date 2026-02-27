@@ -60,6 +60,8 @@ Download and install Xilinx/AMD Vivado ML Standard (standard edition is free, bu
     * Target language: VHDL
   * Bitstream
     * Enable -bin_file
+  * Simulation
+    * xsim.simulate.runtime: all
 * Open the hardware manager
   * Connect to the hardware
   * Add the flash program memory:

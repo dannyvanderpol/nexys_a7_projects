@@ -14,7 +14,7 @@ Part: AMD/Xilinx XC7A100T-1CSG324C
   * Programmable over JTAG and Flash
 * System Features
   * USB-JTAG programming circuitry
-  * 16 MB QSPI Flash 
+  * 16 MB QSPI Flash
   * Powered from USB or any 7V-15V source
   * microSD card connector
 * System Connectivity
@@ -77,3 +77,10 @@ Product page: https://digilent.com/reference/programmable-logic/nexys-a7/start
 Reference manual: https://digilent.com/reference/programmable-logic/nexys-a7/reference-manual
 
 AMD/Xilinx Vivado: https://www.xilinx.com/developer/products/vivado.html
+
+## Edit with VS Code
+
+Why? Because the editor in Vivado is lacking automaticlally removing trailing whitespaces...
+
+Extensions:
+* Verilog-HDL/SystemVerilog/Bluespec SystemVerilog
